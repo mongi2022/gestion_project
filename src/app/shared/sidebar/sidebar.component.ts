@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  currentItem = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  childEvent(x:boolean){
+ this.currentItem=x;
+     
+  }
 }
